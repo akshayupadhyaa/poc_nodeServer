@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+let cors = require('cors');
+router.use(cors())
 let sw = {};
 sw.switch1 = false;
 sw.switch2 = false;
