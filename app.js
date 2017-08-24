@@ -4,7 +4,15 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
+mongoose.connect("mongodb://poc:poc@ds036617.mlab.com:36617/janmoh_proof_of_concept",  function (error) {
+  if (error) {
+    console.log("error" + error);
+  } else {
+    console.log("connected to db")
+  }
+});
 var index = require('./routes/index');
 var api = require('./routes/api');
 
