@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var dataSchema = new Schema({
-    sw1: { type: Boolean, required: true, unique: false },
-    sw2: { type: Boolean, required: true, unique: false },
+    switch1: { type: Boolean, required: true, unique: false },
+    switch2: { type: Boolean, required: true, unique: false },
     time:{
         type:Number,
         unique:true,
