@@ -15,7 +15,7 @@ mongoose.connect("mongodb://poc:poc@ds036617.mlab.com:36617/janmoh_proof_of_conc
 });
 var index = require('./routes/index');
 var api = require('./routes/api');
-
+let poc = require('./routes/poc');
 var app = express();
 
 // view engine setup
@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/api', api);
-
+app.use('/poc',poc)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

@@ -11,6 +11,7 @@
     "cors": "^2.8.4",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "express-promise-middleware": "^1.0.2",
     "jade": "~1.11.0",
     "mongoose": "^4.11.8",
     "morgan": "~1.8.1",
